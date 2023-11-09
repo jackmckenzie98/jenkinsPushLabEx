@@ -1,0 +1,56 @@
+{
+  "oauthClients": {
+    "endpoint": "/oauth/clients",
+    "require_env_change": false,
+    "replacement_env_fields": [],
+    "identifier": "clientId"
+  },
+  "idpAdapters": {
+    "endpoint": "/idp/adapters",
+    "require_env_change": false,
+    "replacement_env_fields": [],
+    "identifier": "clientId"
+  },
+  "authPolicies": {
+    "endpoint": "/authenticationPolicies/default",
+    "require_env_change": false,
+    "replacement_env_fields": [],
+    "identifier": "clientId"
+  },
+  "authenticationPolicyFragments": {
+    "endpoint": "/authenticationPolicies/fragments",
+    "require_env_change": false,
+    "replacement_env_fields": [],
+    "identifier": "clientId"
+  },
+  "spConnections": {
+    "endpoint": "/idp/spConnections",
+    "require_env_change": false,
+    "replacement_env_fields": [],
+    "identifier": "clientId"
+  },
+  "passwordCredentialValidators": {
+    "endpoint": "/passwordCredentialValidators",
+    "require_env_change": false,
+    "replacement_env_fields": [],
+    "identifier": "clientId"
+  },
+  "accessTokenManagers": {
+    "endpoint": "/oauth/accessTokenManagers",
+    "require_env_change": false,
+    "replacement_env_fields": [],
+    "identifier": "clientId"
+  },
+  "accessTokenMappings": {
+    "endpoint": "/oauth/accessTokenMappings",
+    "require_env_change": false,
+    "replacement_env_fields": [],
+    "identifier": "clientId"
+  },
+  "authPolicyContracts": {
+    "endpoint": "/authenticationPolicyContracts",
+    "require_env_change": false,
+    "replacement_env_fields": [],
+    "identifier": "clientId"
+  }
+}
