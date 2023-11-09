@@ -19,7 +19,7 @@ if not os.path.exists(CERT_FILES):
 
 
 def get_secret(secret_name):
-    with open('secrets.json') as f:
+    with open(os.environ.get('SECRETS_FILE')) as f:
         return json.load(f)[secret_name]
 
 
