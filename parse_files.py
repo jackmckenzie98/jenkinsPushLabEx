@@ -44,7 +44,8 @@ def format_object(list_deal):
 def call_existing_environment():
     session = requests.Session()
     secrets = get_secret("API_SECRET")
-    session.auth =(secrets["username"], secrets["password"])
+    print("Loaded secrets:", secrets)
+    session.auth = (secrets["username"], secrets["password"])
     session.headers.update({'X-XSRF-Header': 'PingFederate'})
     session.verify = False
     existing_clients = session.get(f'{MIGRATE_TO}/pf-admin-api/v1/oauth/clients').json()
