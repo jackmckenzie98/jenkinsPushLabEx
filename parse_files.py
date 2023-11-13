@@ -24,6 +24,7 @@ def get_secret(secret_name):
         secrets = json.load(f)
         print(f"Secret name key: {secret_name}\n\n")
         print(secrets)
+        print(type(secrets))
         return secrets.get(secret_name, None)
 
 
