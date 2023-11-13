@@ -22,9 +22,6 @@ def get_secret(secret_name):
     secrets_file_path = os.environ.get('SECRETS_FILE')
     with open(secrets_file_path, 'r') as f:
         secrets = json.load(f)
-        print(f"Secret name key: {secret_name}\n\n")
-        print(secrets)
-        print(type(secrets))
         return secrets.get(secret_name, None)
 
 
